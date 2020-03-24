@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout.master');
+    return view('layout.app');
 });
+
+Route::get('home', 'siteController@home');
+Route::get('about ', 'siteController@about');
+Route::get('portfolio', 'siteController@portfolio');
+Route::get('service', 'siteController@service');
+
+
