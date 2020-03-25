@@ -5,12 +5,13 @@
 	<title>@yield('title')</title>
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
 	
 
 </head>
 <body>
 
-	<div class="btn btn-info">button</div>
+	@include('layout.menu')
 	@yield('content')
 
 	<script src="{{asset('js/jquery-3.4.1.slim.min.js')}}"></script>
